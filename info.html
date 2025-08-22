@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Desarrollo Automatizado con IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 280px;
+            max-height: 280px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 sm:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#073B4C] mb-2">De la Idea a la Realidad</h1>
+            <p class="text-lg md:text-xl text-[#118AB2]">Cómo la IA está Automatizando el Desarrollo de Software</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center justify-around text-center">
+                <div class="w-full md:w-1/3 p-4">
+                    <h3 class="text-2xl font-bold text-[#FF6B6B] mb-2">El Reto Actual</h3>
+                    <p class="text-[#073B4C]">El desarrollo manual es lento, costoso y propenso a errores humanos que retrasan los proyectos.</p>
+                </div>
+                <div class="text-4xl font-bold text-gray-300 hidden md:block">→</div>
+                 <div class="text-4xl font-bold text-gray-300 md:hidden my-4">↓</div>
+                <div class="w-full md:w-1/3 p-4">
+                    <h3 class="text-2xl font-bold text-[#06D6A0] mb-2">La Solución con IA</h3>
+                    <p class="text-[#073B4C]">Los agentes de IA interpretan requerimientos y generan código funcional en minutos, acelerando todo el ciclo de vida.</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-6">1. Generación Automatizada del Backend</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Con una única instrucción, el agente de IA construye un backend robusto y listo para producción. Se crea una API completa con todas las capas necesarias para su funcionamiento y despliegue.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#118AB2] mb-2">API REST Funcional</h4>
+                        <div class="chart-container">
+                            <canvas id="backendChart"></canvas>
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500">API con Spring Boot que expone todos los endpoints CRUD necesarios.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#118AB2] mb-2">Persistencia de Datos</h4>
+                        <div class="chart-container">
+                            <canvas id="databaseChart"></canvas>
+                        </div>
+                         <p class="mt-2 text-sm text-gray-500">Base de datos H2 configurada con JPA para el almacenamiento de datos.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#118AB2] mb-2">Documentación Interactiva</h4>
+                        <div class="chart-container">
+                            <canvas id="docsChart"></canvas>
+                        </div>
+                         <p class="mt-2 text-sm text-gray-500">Documentación autogenerada y navegable con OpenAPI y Swagger UI.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-1 lg:col-span-2 bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-6">2. Creación de la Aplicación Móvil</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8">El agente de IA no se detiene en el backend. También genera una aplicación móvil multiplataforma que consume la API recién creada, implementando un flujo de autenticación completo.</p>
+                <div class="flex flex-col items-center justify-center space-y-4">
+                     <div class="flex items-center justify-center w-full text-center">
+                        <div class="p-4 rounded-lg">
+                            <span class="text-6xl">📱</span>
+                            <p class="font-semibold text-[#073B4C]">App Multiplataforma</p>
+                            <p class="text-sm text-gray-500">Android & Linux</p>
+                        </div>
+                        <div class="text-2xl font-bold text-[#118AB2] mx-4">↔️</div>
+                        <div class="p-4 rounded-lg">
+                             <span class="text-6xl">🖥️</span>
+                            <p class="font-semibold text-[#073B4C]">Backend API</p>
+                             <p class="text-sm text-gray-500">Conexión Segura</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-left mt-6">
+                        <li><span class="font-semibold">Login Funcional:</span> Autenticación de usuarios contra el backend.</li>
+                        <li><span class="font-semibold">Navegación Intuitiva:</span> Flujo claro entre la pantalla de login y la de bienvenida.</li>
+                        <li><span class="font-semibold">Visualización de Avatar:</span> Decodifica y muestra la imagen de perfil del usuario.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="md:col-span-1 bg-white rounded-lg shadow-md p-6 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-6">3. Integración Continua (CI)</h2>
+                 <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8">Para garantizar la calidad, se configura automáticamente un pipeline de CI con GitHub Actions que valida la integridad del código en cada cambio.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg">
+                        <span class="text-2xl mr-4">📤</span>
+                        <p class="font-semibold text-[#073B4C]">Push al Repositorio</p>
+                    </div>
+                    <div class="self-center text-2xl text-gray-400">↓</div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg">
+                        <span class="text-2xl mr-4">⚙️</span>
+                        <p class="font-semibold text-[#073B4C]">Disparador de GitHub Actions</p>
+                    </div>
+                     <div class="self-center text-2xl text-gray-400">↓</div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg">
+                        <span class="text-2xl mr-4">✅</span>
+                        <p class="font-semibold text-[#073B4C]">Verificación de Compilación</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-[#073B4C] text-white rounded-lg shadow-md p-8 text-center">
+                <h2 class="text-4xl font-bold mb-4">Proyecto Completo en ~20 Minutos</h2>
+                <p class="text-lg text-gray-300 mb-6">Lo que antes tomaba días o semanas, ahora se logra en una fracción del tiempo. El código generado está disponible para su consulta y extensión.</p>
+                <a href="#" class="inline-block bg-[#06D6A0] text-[#073B4C] font-bold py-3 px-8 rounded-lg text-lg hover:bg-white transition-colors">
+                    Ver el Proyecto en GitHub
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        const createDonutChart = (ctx, label, data, colors) => {
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: data.map(d => d.label),
+                    datasets: [{
+                        label: label,
+                        data: data.map(d => d.value),
+                        backgroundColor: colors,
+                        borderColor: '#ffffff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        ...tooltipTitleCallback.plugins,
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        };
+
+        const backendData = [
+            { label: 'Controllers', value: 40 },
+            { label: 'Entities', value: 25 },
+            { label: 'Repositories', value: 35 }
+        ];
+        createDonutChart(document.getElementById('backendChart').getContext('2d'), 'API REST', backendData, ['#FF6B6B', '#FFD166', '#06D6A0']);
+
+        const databaseData = [
+            { label: 'Schema Auto-Gen', value: 60 },
+            { label: 'In-File Storage', value: 40 }
+        ];
+        createDonutChart(document.getElementById('databaseChart').getContext('2d'), 'Base de Datos', databaseData, ['#118AB2', '#073B4C']);
+
+        const docsData = [
+            { label: 'Endpoints', value: 70 },
+            { label: 'Schemas', value: 30 }
+        ];
+        createDonutChart(document.getElementById('docsChart').getContext('2d'), 'Documentación', docsData, ['#FFD166', '#FF6B6B']);
+    </script>
+</body>
+</html>
+
